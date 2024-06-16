@@ -6,7 +6,7 @@ local TextLabel = Instance.new("TextLabel")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = true
+ScreenGui.ResetOnSpawn = false
 
 SMASHER.Name = "SMASHER"
 SMASHER.Parent = ScreenGui
