@@ -1,42 +1,57 @@
-local ScreenGui = Instance.new("ScreenGui")
-local SMASHER = Instance.new("TextLabel")
-local PROTO = Instance.new("TextLabel")
-local Version = Instance.new("TextLabel")
-local TextLabel = Instance.new("TextLabel")
+local gui = {};
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
+-- StarterGui.PROTOSMASHER
+gui["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+gui["1"]["Name"] = [[PROTOSMASHER]];
+gui["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+gui["1"]["ResetOnSpawn"] = false;
 
-SMASHER.Name = "SMASHER"
-SMASHER.Parent = ScreenGui
-SMASHER.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SMASHER.BackgroundTransparency = 1.000
-SMASHER.Position = UDim2.new(0.0535685226, 0, 0.937888205, 0)
-SMASHER.Size = UDim2.new(0, 200, 0, 50)
-SMASHER.Font = Enum.Font.SourceSansBold
-SMASHER.Text = "SMASHER"
-SMASHER.TextColor3 = Color3.fromRGB(255, 255, 255)
-SMASHER.TextSize = 40.000
+-- StarterGui.PROTOSMASHER.version
+gui["2"] = Instance.new("TextLabel", gui["1"]);
+gui["2"]["TextWrapped"] = true;
+gui["2"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+gui["2"]["TextTransparency"] = 0.18;
+gui["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+gui["2"]["TextSize"] = 23;
+gui["2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+gui["2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+gui["2"]["BackgroundTransparency"] = 1;
+gui["2"]["Size"] = UDim2.new(0, 197, 0, 44);
+gui["2"]["Text"] = [[v3.2.3x]];
+gui["2"]["Name"] = [[version]];
+gui["2"]["Position"] = UDim2.new(0.067, 0, 0.966, 0);
 
-PROTO.Name = "PROTO"
-PROTO.Parent = ScreenGui
-PROTO.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PROTO.BackgroundTransparency = 1.000
-PROTO.Position = UDim2.new(-0.009007679, 0, 0.937888205, 0)
-PROTO.Size = UDim2.new(0, 200, 0, 50)
-PROTO.Font = Enum.Font.SourceSansBold
-PROTO.Text = "PROTO"
-PROTO.TextColor3 = Color3.fromRGB(0, 0, 0)
-PROTO.TextSize = 40.000
+-- StarterGui.PROTOSMASHER.PROTO
+gui["3"] = Instance.new("TextLabel", gui["1"]);
+gui["3"]["TextWrapped"] = true;
+gui["3"]["Active"] = true;
+gui["3"]["ZIndex"] = 0;
+gui["3"]["TextTransparency"] = 0.18;
+gui["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+gui["3"]["TextSize"] = 29;
+gui["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+gui["3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+gui["3"]["BackgroundTransparency"] = 1;
+gui["3"]["Size"] = UDim2.new(0, 197, 0, 28);
+gui["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+gui["3"]["Text"] = [[PROTO]];
+gui["3"]["LayoutOrder"] = 1;
+gui["3"]["Name"] = [[PROTO]];
+gui["3"]["Position"] = UDim2.new(-0.02971, 0, 0.97392, 0);
 
-TextLabel.Parent = ScreenGui
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.100477983, 0, 0.950310588, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "v2.0.1"
-TextLabel.TextColor3 = Color3.fromRGB(220, 220, 220)
-TextLabel.TextSize = 14.000
-TextLabel.Text.Transparency = 0
+-- StarterGui.PROTOSMASHER.SMASHER
+gui["4"] = Instance.new("TextLabel", gui["1"]);
+gui["4"]["TextWrapped"] = true;
+gui["4"]["TextTransparency"] = 0.18;
+gui["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+gui["4"]["TextSize"] = 33;
+gui["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+gui["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+gui["4"]["BackgroundTransparency"] = 1;
+gui["4"]["Size"] = UDim2.new(0, 197, 0, 50);
+gui["4"]["Text"] = [[SMASHER]];
+gui["4"]["Name"] = [[SMASHER]];
+gui["4"]["Position"] = UDim2.new(0.02007, 0, 0.96018, 0);
+
+
+return gui["1"], require;
