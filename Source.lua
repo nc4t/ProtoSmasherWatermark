@@ -9,7 +9,7 @@ gui["1"]["ResetOnSpawn"] = false;
 -- StarterGui.PROTOSMASHER.version
 gui["2"] = Instance.new("TextLabel", gui["1"]);
 gui["2"]["TextWrapped"] = true;
-gui["2"]["ZIndex"] = 10;
+gui["2"]["ZIndex"] = 55555555;
 gui["2"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 gui["2"]["TextTransparency"] = 0.18;
 gui["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -27,7 +27,7 @@ gui["2"]["Position"] = UDim2.new(0.067, 0, 0.966, 0);
 gui["3"] = Instance.new("TextLabel", gui["1"]);
 gui["3"]["TextWrapped"] = true;
 gui["3"]["Active"] = true;
-gui["3"]["ZIndex"] = 10;
+gui["3"]["ZIndex"] = 55555555;
 gui["3"]["TextTransparency"] = 0.18;
 gui["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 gui["3"]["TextSize"] = 29;
@@ -44,7 +44,7 @@ gui["3"]["Position"] = UDim2.new(-0.02971, 0, 0.97392, 0);
 -- StarterGui.PROTOSMASHER.SMASHER
 gui["4"] = Instance.new("TextLabel", gui["1"]);
 gui["4"]["TextWrapped"] = true;
-gui["4"]["ZIndex"] = 10;
+gui["4"]["ZIndex"] = 55555555;
 gui["4"]["TextTransparency"] = 0.18;
 gui["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 gui["4"]["TextSize"] = 33;
