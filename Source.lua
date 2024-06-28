@@ -19,7 +19,7 @@ gui["2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 gui["2"]["BackgroundTransparency"] = 1;
 gui["2"]["Size"] = UDim2.new(0, 197, 0, 44);
 gui["2"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-gui["2"]["Text"] = [[v3.2.3x]];
+gui["2"]["Text"] = [[v3.2.4a]];
 gui["2"]["Name"] = [[version]];
 gui["2"]["Position"] = UDim2.new(0.067, 0, 0.966, 0);
 
